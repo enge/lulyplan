@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+                 
+        <f:facet name="first">
+            
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    
+    <title><ui:insert name="title">Pagina</ui:insert></title>    
+    <link rel="stylesheet" type="text/css" href="#{facesContext.externalContext.requestContextPath}/css/estilo.css" />  
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css"></link>
+           
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <META NAME="description" content="A melhor opção de saude,oferece plano de saúde para você e sua família e empresa"/>
+            <META NAME="description" content="O melhor atendimento para voçe sua familia ou sua empresa, voçe encontra na MELHOR OPÇÃO, dicas de uma vida saudável"/>
+            <META NAME="keywords" content="A melhor opção de saude,oferece plano de saúde para você e sua família e empresa"/>
+            <title>Melhor Opção de Saude</title>
+            <link rel="shortcut icon" href="img/images.gif"/>
+            <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css"></link>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'/>
+         
+            <script>
+                $(window).load(function () {
+                    $('#slider').chocoslider( { }) ;
+                });
+            </script>
+                                              
+        </f:facet>
+    </h:head>
+    <h:body>
+        
+        <p:layout styleClass="ui-layout-container" fullPage="true">
+            <p:layoutUnit position="north" size="auto">
+                <img src="img/header.jpg" alt="Header" id="img"/>
+            </p:layoutUnit>            
+            <p:layoutUnit position="center" >
+                
+                <h:form>  
+                    <p:growl id="messages"/>
+                    <p:menubar >
+                        <p:submenu label="Inicio">
+                           <p:menuitem value="Home" url="index.xhtml" />
+                        </p:submenu>                    
+                        <p:submenu label="Institucional" >
+                            <p:menuitem value="Quem Somos" url="pagina2.xhtml" />
+                        </p:submenu>
+                        <p:submenu label="Dicas de Saude">
+                        <p:menuitem value="Alimentação" url="pagina3.xhtml"  />
+                        </p:submenu>
+                        <p:submenu label="Contato" >
+                        <p:menuitem value="Telefone \ E-mail" url="Contato.xhtml" /> 
+                        
+                        </p:submenu>
+                        <p:submenu label="Produtos">
+                            <p:menuitem value="Planos individuais e familiares" url="tabela.xhtml" target="_parent"></p:menuitem>
+                            <p:menuitem value="Planos pequena e media empresa " url="produtos1.xhtml" target="_parent"></p:menuitem>
+                        </p:submenu>
+                    </p:menubar>
+                </h:form>
+                <h:form>
+                 
+                <div id="area">
+                    <script>
+                        var diasdasemana = new Array
+                                ("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+                        meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+                        var data = new Date();
+                        document.write(" " + diasdasemana[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de 2015");
+       
+                    </script>
+                </div>
+                
+                <h:form>
+                    <ui:insert name="content">
+                        O que estiver aqui será substituido!oagadgadgadgo
+                    </ui:insert>
+                </h:form>
+                </h:form>
+                   </p:layoutUnit> 
+            
+          
+            <p:layoutUnit position="south" size="60">
+                               
+                   <div id="ans">
+                    <img src="img/logo_ans.gif" alt="Logo" />
+                </div>
+                
+            </p:layoutUnit>
+             
+                       
+        </p:layout>   
+    </h:body>    
+    
+</html>
