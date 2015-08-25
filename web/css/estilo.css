@@ -59,7 +59,13 @@
   //border: 1px solid #000;
   margin: 5px auto;  
   margin-bottom: 5px auto;
-  
+    table, td, th, tfoot {border:solid 1px #000; padding:5px;}
+                    th {background-color:#999;}
+                    caption {font-size:x-large;}
+                    colgroup {background:#F60;}
+                    .coluna1 {background:#F60;}
+                    .coluna2  {background:#F33;}
+                    .coluna3  {background:#F99;}
   
 }
 
