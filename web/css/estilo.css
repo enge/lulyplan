@@ -50,7 +50,7 @@
 }
 #tabela{
   border: 2px ;
-  line-height: 2% !important; 
+  line-height: calc(0%) !important;  
   position: absolute ;
   background-color: white;
   left: 30%;
